@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Doctor Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDoctor"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/purple_500"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/doctlo"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/doctor"
+                    android:textSize="18sp"
+                    android:textColor="@color/purple_500"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Patient Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPatient"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:strokeColor="@color/purple_500"
+            app:strokeWidth="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/pstlo"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="TODO" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/patient"
+                    android:textSize="18sp"
+                    android:textColor="@color/purple_500"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
