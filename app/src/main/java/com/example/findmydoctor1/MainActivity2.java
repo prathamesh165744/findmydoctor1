@@ -18,15 +18,15 @@ public class MainActivity2 extends AppCompatActivity {
         MaterialCardView cardPatient = findViewById(R.id.cardPatient);
 
 
-//        cardDoctor.setOnClickListener(v -> {
-//            startActivity(new Intent(this, activity_doctor_login.class));
-//
-//        });
-//
-//        // Set click listener for Patient card
-//        cardPatient.setOnClickListener(v -> {
-//            startActivity(new Intent(this, activity_patient_login.class));
-//
-//        });
+        cardDoctor.setOnClickListener(v -> {
+            startActivity(new Intent(this, activity_doctor_login.class));
+
+        });
+
+        // Set click listener for Patient card
+        cardPatient.setOnClickListener(v -> {
+            startActivity(new Intent(this, activity_patient_login.class));
+
+        });
     }
 }
